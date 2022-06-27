@@ -15,8 +15,6 @@ Inside of this repoistory you will find **express** based web application for **
 
 ## Getting started
 
-Note: you need to set env variables defined in `.env.local` file.
-
 1. Clone this repo:
 
 2. Install dependencies:
