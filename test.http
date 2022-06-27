@@ -1,0 +1,13 @@
+### GET api/activity 
+GET http://localhost:8080/api/activity
+
+
+### POST api/user
+POST http://localhost:8080/api/user HTTP/1.1
+content-type: application/json
+
+{
+    "name": "John",
+    "accessibility": "low",
+    "price": "free"
+}
