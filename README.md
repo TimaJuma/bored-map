@@ -6,7 +6,6 @@ Inside of this repoistory you will find **express** based web application for **
 
 ### Main features:
 
-- 🐳 Containerized application
 - 🚄 [ExpressJS](http://expressjs.com) framework with [TypeScript](https://www.typescriptlang.org/) on the board
 - ♻️ Live reload
 - 🏇 minified and optimized code for production build
@@ -20,13 +19,13 @@ Note: you need to set env variables defined in `.env.local` file.
 
 1. Clone this repo:
 
-1. Install dependencies:
+2. Install dependencies:
 
 ```
 npm install
 ```
 
-1. Run server in dev mode:
+3. Run server in dev mode:
 
 ```
 npm run start:dev
