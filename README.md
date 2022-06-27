@@ -31,6 +31,8 @@ npm install
 npm run start:dev
 ```
 
+**NOte:** In some cases when `price` or `accessibility` criterias has not match you will get response with : `error "No activity found with the specified parameters"`
+
 ## How to work with the APP
 
 1. Enviromment variables - define your envs in `.env.local` file and provide validation rules for them inside `@config/config.ts` file.
