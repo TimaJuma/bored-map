@@ -55,7 +55,6 @@ const getBoredApiResponse = async (): Promise<BoredResponse> => {
   const mappedAccessibility = mapAccessibility(accessibility);
 
   const url = getBoredApiURL(mappedPrice, mappedAccessibility);
-  console.log({ url, mapAccessibility, mapPrice });
 
   try {
     const response = await axios.get<BoredResponse>(url);
