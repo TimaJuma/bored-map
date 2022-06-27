@@ -1,6 +1,6 @@
 # Node Express App - Bored
 
-TH Bored app is a small project to map `bored api response`.
+The Bored app is a small project to map `bored api response`.
 
 Inside of this repoistory you will find **express** based web application for **Node.js** runtime. It’s built on **TypeScript**
 
@@ -31,20 +31,34 @@ npm install
 npm run start:dev
 ```
 
-**NOte:** In some cases when `price` or `accessibility` criterias has not match you will get response with : `error "No activity found with the specified parameters"`
+**Note:** In some cases when `price` or `accessibility` criterias has no matching and you will get response witin format of : `error "No activity found with the specified parameters"`
 
-## How to work with the APP
+## API
 
-1. Enviromment variables - define your envs in `.env.local` file and provide validation rules for them inside `@config/config.ts` file.
-2. Define your routung inside `api.ts` fiile.
-3. Describe your newly created API inside `swagger.json` file
+1. GET `api/health` - to check if server is alive
 
-## Testing
+1. GET `api/activity` - to get border API mapped response in format of :
 
-The Jest test suites are run by executing
+```
+{
+  "activity": "Prepare a 72-hour kit",
+  "type": "busywork",
+  "participants": 1,
+  "price": "low",
+  "link": "https://www.ready.gov/kit",
+  "key": "4266522",
+  "accessibility": "medium"
+}
+```
 
-```sh
-npm test
+1. POST `api/user` - to create user preferences. The body sould be in the format of :
+
+```
+{
+    "name": "John",
+    "accessibility": "low",
+    "price": "free"
+}
 ```
 
 ## Code linting
